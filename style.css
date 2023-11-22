@@ -1,0 +1,96 @@
+/* this customizes the body  */
+body{
+    background-color: sandybrown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+/* this moves the container to the right */
+.container{
+   
+    text-align: right;
+}
+/* this customizes the border around the input and labels */
+.minToSec{
+    background-color:burlywood ; /* burlywood brown Container Background Color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+/* this customizes the label */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: snow; /* snow white Text Color */
+  }
+/* this customizes the input */
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #050505;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    outline: none;
+  }
+/* this customizes makes the input field appear as a text box */
+  input[type="number"] {
+    appearance: textfield;
+  }
+/* this customizes to remove the spin-number button */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* input[type="number"]:focus {
+    border-color: #e91e63; /* Dark Pink Border Color on Focus */
+  
+
+  input[type="number"]:hover {
+    border-color: pink;
+  }
+
+  input[type="number"]::placeholder {
+    color: #e69757; /* brownish  Placeholder Text Color */
+  }
+
+  input[type="number"] + label {
+    margin-top: 10px;
+  }
+/* this customizes the button */
+  input[type ='submit']{
+    background-color: transparent;
+    border: none;
+   box-shadow: .5px .9px,
+               .2px .9px transparent;
+               cursor: pointer;
+               
+  }
+
+
+   /* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+      max-width: 800px;
+    }
+  }
+  
+  /* Large screens (desktops) */
+  @media only screen and (min-width: 1025px) {
+    .container {
+      max-width: 1200px;
+    }
+  }

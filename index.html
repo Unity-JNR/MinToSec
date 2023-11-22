@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinToSec</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div class="container">
+        <div class="minToSec">
+       <!-- this is where you write your minutes -->
+        <label for="Minutes">Minutes <i class="fa fa-clock-o"></i></label>
+        <input type="number" name="Min" id="Min" placeholder="type your mintues here" required>
+       <!-- this is where the seconds will display -->
+        <label for="Seconds">Seconds <i class="fa fa-clock-o"></i></label>
+        <input type="number" name="Sec" id="Sec" readonly>
+
+        <input type="submit" value="Convert" data-convert>
+       </div>       
+    </div>
+    
+
+
+
+
+
+
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
